@@ -4,6 +4,8 @@ HELP.md
 .gradle
 build/
 target/
+/01_web
+/02_forms
 
 ### STS ###
 .apt_generated
