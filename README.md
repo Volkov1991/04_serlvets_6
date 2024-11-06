@@ -3,12 +3,14 @@
 
 Возникает вопрос, почему бы не использовать его в вашем приложении с сервлетами и не заменить указанный ниже код на DI со Spring:
 
+```Java
 @Override
 public void init() {
     final var repository = new PostRepository();
     final var service = new PostService(repository);
     controller = new PostController(service);
 }
+```
 Задача
 Замените код в методе init на DI со Spring с использованием методов конфигурирования бинов:
 
